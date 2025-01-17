@@ -1,6 +1,7 @@
 import UserCard from "../commons/UserCard";
 import Button from "../ui/Button";
 import TextInput from "../ui/TextInput";
+import TotalVisits from "../commons/TotalVisits";
 
 export default function Hero() {
   return (
@@ -25,7 +26,7 @@ export default function Hero() {
         <div className="relative">
           <UserCard />
           <div className="absolute -bottom-[7%] -right-[45%]">
-            {/* <TotalVisits /> */}
+            <TotalVisits />
           </div>
           <div className="absolute top-[20%] -left-[45%] -z-10">
             {/* <ProjectCard /> */}
