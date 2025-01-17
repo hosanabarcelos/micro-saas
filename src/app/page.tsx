@@ -1,5 +1,9 @@
+import Hero from "./components/pages/Hero";
+
 export default function Home() {
   return (
-    <div className="bg-background-primary">SaaS</div>
+    <div className="max-w-7xl mx-auto">
+      <Hero />
+    </div>
   );
 }
