@@ -1,3 +1,4 @@
+import FAQ from "./components/pages/Faq";
 import Header from "./components/pages/Header";
 import Hero from "./components/pages/Hero";
 import Pricing from "./components/pages/Pricing";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <VideoExplanation />
       <Pricing />
+      <FAQ />
     </div>
   );
 }
