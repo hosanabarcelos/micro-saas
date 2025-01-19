@@ -1,8 +1,8 @@
-import UserCard from "../commons/UserCard";
-import Button from "../ui/Button";
-import TextInput from "../ui/TextInput";
-import TotalVisits from "../commons/TotalVisits";
-import ProjectCard from "../commons/ProjectCard";
+import UserCard from "../../commons/UserCard";
+import Button from "../../ui/Button";
+import TextInput from "../../ui/TextInput";
+import TotalVisits from "../../commons/TotalVisits";
+import ProjectCard from "../../commons/ProjectCard";
 
 export default function Hero() {
   return (

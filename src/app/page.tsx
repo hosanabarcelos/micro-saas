@@ -1,8 +1,8 @@
-import FAQ from "./components/pages/Faq";
-import Header from "./components/pages/Header";
-import Hero from "./components/pages/Hero";
-import Pricing from "./components/pages/Pricing";
-import VideoExplanation from "./components/pages/VideoExplanation";
+import FAQ from "./components/pages/landing-page/Faq";
+import Header from "./components/pages/landing-page/Header";
+import Hero from "./components/pages/landing-page/Hero";
+import Pricing from "./components/pages/landing-page/Pricing";
+import VideoExplanation from "./components/pages/landing-page/VideoExplanation";
 
 export default function Home() {
   return (

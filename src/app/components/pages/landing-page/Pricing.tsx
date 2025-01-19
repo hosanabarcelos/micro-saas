@@ -1,5 +1,5 @@
 import { TRIAL_DAYS } from "@/app/lib/config";
-import Button from "../ui/Button";
+import Button from "../../ui/Button";
 
 export default function Pricing() {
   return (
