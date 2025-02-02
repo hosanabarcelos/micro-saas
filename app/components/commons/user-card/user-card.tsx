@@ -14,7 +14,7 @@ export default function UserCard({
   return (
     <div className="w-[348px] flex flex-col gap-5 items-center p-5 border border-white border-opacity-10 bg-[#121212] rounded-3xl text-white">
       <div className="size-48">
-      <img
+        <img
           src="https://github.com/hosanabarcelos.png"
           alt="Hosana Barcelos"
           className="rounded-full object-cover w-full h-full"
@@ -74,30 +74,18 @@ export default function UserCard({
       </div>
       <div className="flex flex-col gap-3 w-full h-[172px]">
         <div className="w-full flex flex-col items-center gap-3">
-          {profileData?.link1 && (
-            <Link
-              href={formatUrl(profileData?.link1.url)}
-              target="_blank"
-              className="w-full"
-            >
+          {profileData?.link1?.title && profileData?.link1?.url && (
+            <Link href={formatUrl(profileData.link1.url)} target="_blank" className="w-full">
               <Button className="w-full">{profileData.link1.title}</Button>
             </Link>
           )}
-          {profileData?.link2 && (
-            <Link
-              href={formatUrl(profileData?.link2.url)}
-              target="_blank"
-              className="w-full"
-            >
+          {profileData?.link2?.title && profileData?.link2?.url && (
+            <Link href={formatUrl(profileData.link2.url)} target="_blank" className="w-full">
               <Button className="w-full">{profileData.link2.title}</Button>
             </Link>
           )}
-          {profileData?.link3 && (
-            <Link
-              href={formatUrl(profileData?.link3.url)}
-              target="_blank"
-              className="w-full"
-            >
+          {profileData?.link3?.title && profileData?.link3?.url && (
+            <Link href={formatUrl(profileData.link3.url)} target="_blank" className="w-full">
               <Button className="w-full">{profileData.link3.title}</Button>
             </Link>
           )}
