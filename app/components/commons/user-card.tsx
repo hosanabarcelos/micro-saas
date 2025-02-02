@@ -14,7 +14,7 @@ export default function UserCard() {
         />
       </div>
       <div className="flex flex-col gap-2 w-full">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2">
           <h3 className="text-3xl font-bold min-w-0 overflow-hidden">
             Hosana Barcelos
           </h3>
