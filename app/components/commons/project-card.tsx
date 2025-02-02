@@ -1,5 +1,6 @@
 "use client";
 
+import { formatUrl } from "@/app/lib/utils";
 import { ProjectData } from "@/app/server/get-profile-data";
 import Link from "next/link";
 
@@ -8,25 +9,14 @@ export default function ProjectCard({
   isOwner,
   img,
 }: {
-  project?: ProjectData;
+  project: ProjectData;
   isOwner: boolean;
   img: string;
 }) {
-  if (!project) {
-    return (
-      <div className="w-[340px] h-[132px] flex items-center justify-center bg-background-secondary p-3 rounded-[20px] border border-transparent hover:border-border-secondary">
-        <span className="text-content-body text-sm">Projeto não encontrado</span>
-      </div>
-    );
-  }
-
-  const projectUrl = project.projectUrl || "#"; // fallback URL
-  const formattedUrl = projectUrl.startsWith("http")
-    ? projectUrl
-    : `https://${projectUrl}`;
+  const formattedUrl = formatUrl(project.projectUrl);
 
   function handleClick() {
-    console.log("clicked"); // TODO: analytics
+    console.log("clicked"); // TODO: implementar analytics
   }
 
   return (
