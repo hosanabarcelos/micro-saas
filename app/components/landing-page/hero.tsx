@@ -27,13 +27,21 @@ export default function Hero() {
         <div className="relative">
           <UserCard />
           <div className="absolute -bottom-[7%] -right-[45%]">
-            <TotalVisits />
+            <TotalVisits totalVisits={1542} />
           </div>
           <div className="absolute top-[20%] -left-[45%] -z-10">
-            <ProjectCard />
+            <ProjectCard
+              name="Projeto 1"
+              description="Descrição do projeto 1"
+              img="https://searchengineland.com/wp-content/seloads/2020/03/code-SS_634574354-1920x1080-1.jpg"
+            />
           </div>
           <div className="absolute -top-[5%] -left-[55%] -z-10">
-            <ProjectCard />
+            <ProjectCard
+              name="Projeto 2"
+              description="Descrição do projeto 2"
+              img="https://searchengineland.com/wp-content/seloads/2020/03/code-SS_634574354-1920x1080-1.jpg"
+            />
           </div>
         </div>
       </div>
